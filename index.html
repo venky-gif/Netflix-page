@@ -1,197 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    <style>
-        
-        body{
-            background-color: black;
-        }h1{
-            color: white;
-        }
-
-        .container{
-            width: 100%;
-            position: relative;
-            display: flex;
-            justify-content: left;
-            min-width: 300px;
-            object-fit: contain;
-           
-
-        }
-        .netflix-logo{
-            width: 100px;
-            height: 20px;
-            text-align: center;
-            
-            
-            
-            
-        }
-        .nav-icons{
-            position: absolute;
-            text-decoration: none;
-            justify-content: space-between;
-            left: 3px;
-            margin-top: -1px;
-            position: fixed;
-            left: 0px;
-            
-            right: 0px;
-            background-color: rgba(0, 0, 0, 0.584);
-
-            
-            padding: 12px 8px 15px 13px;
-            
-         
-
-
-        }
-        .nav-icon{
-            text-decoration: none;
-            color: white;
-            font-size: 15px;
-            padding-left: 7px;
-            padding-right: 5px;
-            margin-top: 20px;
-           
-            
-            
-            
-            
-        }
-        .buttons{
-            position: absolute;
-            margin-top: 400px;
-            margin-left: 20px;
-            
-            
-        }
-       
-            .button1{
-                background-color: white;
-                border: none;
-                margin-left: opx;
-                padding:5px 15px 5px 20px;
-            }
-            .button2{
-                background-color: rgb(177, 171, 171);
-                border: none;
-                padding:5px 15px 5px 20px;
-            }
-            .button1:hover{
-                transform: scale(1.03);
-            }
-            .button2:hover{
-                transform: scale(1.03);
-                
-            }
-             .para{
-                position: absolute;
-                color:azure;
-                font-size: 17px;
-                margin-top: 340px;
-                margin-left: 20px;
-             }   
-             .movie-name{
-                position: absolute;
-                margin-top: 280px;
-                margin-left: 20px;
-             }
-            .trending{
-                display: flex;
-                overflow-y: hidden;
-               overflow-x: hidden;
-                padding: 20px;
-
-            }
-            .trending-movies{
-                display: flex;
-                object-fit: contain;
-                width: 100%;
-                height: 240px;
-               margin: 3px;
-               padding-top: 10px;
-               /* background-color: brown; */
-                
-
-            }
-            .trending-movies:hover{
-                transform: scale(1.08);
-}
-                
-            
-            .New-movies{
-                display: flex;
-                justify-content: space-between;
-                justify-content: center;
-                padding-top: 3px;
-                margin: 5px;
-            }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <img src="./images/f6.jpg" alt="fast and furious">
-        
+    <div  class="flex-container">
+       
         <div class="nav-icons">
-            <img class="netflix-logo" src="./images/netflix-2015-logo.svg" alt="">
-            <a class="nav-icon" href="Home">Home</a>
-            <a class="nav-icon" href="TV Shows">TV Shows</a>
-            <a class="nav-icon"href="Movies">Movies</a>
-            <a class="nav-icon"href="New & popular">New & popular</a>
-            <a class="nav-icon"href="My List">My List</a>
-            <a class="nav-icon"href="Browse by language">Browse by language</a>
-        </div>
-        <h1 class="movie-name">Fast and Furious 9</h1>
-        <p class="para">
-            Ita an Hollywood action movie with cars and guns The fight between the two brothers .<br>
-            The main lead role is van Diesel and its has 9 series u can watch in netflix
-        </p>
-        <div class="buttons">
-            
-              <button class="button1">Play</button>
-        <button class="button2">more info</button>
-        </div>
-        
+            <img class="Netflix-logo" src="./images/netflix-2015-logo.svg" alt="">
+            <a class="icon-link"  href="">Home</a>
+            <a class="icon-link"  href="">TV Shows</a>
+            <a class="icon-link"  href="">Movies</a>
+            <a class="icon-link"  href="">New&Popular</a>
+            <a class="icon-link"  href="">MY list</a>
+            <div class="movie-name-description">
+                <h1>Fast and Furious 9</h1>
+                <p>its and hollywood action one of the highest box-office <br> highest gross income in the world</p>
+                <div class="buttons">
+                    <button>playlist</button>
+                    <button>moreinfo</button>
+                </div>
+            </div>
     </div>
-    <h1>Trending Now</h1>
-    <div class="trending">
-        
-        <img class="trending-movies" src="./images/brahmastra.jpg" alt="">
-        <img class="trending-movies" src="./images/karthekaya.jpg" alt="">
-        <img class="trending-movies"src="./images/lucifer.jpg" alt="">
-        <img class="trending-movies"src="./images/monkeyking.jpg" alt="">
-        <img class="trending-movies" src="./images/shamsera.jpg" alt="">
-        <img class="trending-movies"src="./images/liger.jpg" alt="">
-        <img class="trending-movies"src="./images/monkeyking.jpg" alt="">
+   <h1>Netflix Originals </h1>
+   <div class="Netflix-originals">
+    <img src="./images/karthekaya.jpg" alt="" class="small-images">
+    <img src="./images/liger.jpg" alt="" class="small-images">
+    <img src="./images/lucifer.jpg" alt="" class="small-images">
+    <img src="./images/monkeyking.jpg" alt="" class="small-images">
+    <img src="./images/shamsera.jpg" alt="" class="small-images">
+    <img src="./images/karthekaya.jpg" alt="" class="small-images">
+    <img src="./images/liger.jpg" alt="" class="small-images">
+    <img src="./images/lucifer.jpg" alt="" class="small-images">
+    <img src="./images/monkeyking.jpg" alt="" class="small-images">
+    <img src="./images/shamsera.jpg" alt="" class="small-images">
 
-    </div>
-    <h1>New movies</h1>
-    <div class="trending">
-        
-        <img class="trending-movies" src="./images/brahmastra.jpg" alt="">
-        <img class="trending-movies" src="./images/karthekaya.jpg" alt="">
-        <img class="trending-movies"src="./images/lucifer.jpg" alt="">
-        <img class="trending-movies"src="./images/monkeyking.jpg" alt="">
-        <img class="trending-movies" src="./images/shamsera.jpg" alt="">
-        <img class="trending-movies"src="./images/liger.jpg" alt="">
-        <img class="trending-movies"src="./images/monkeyking.jpg" alt="">
+   </div>
+   <h1>Trending</h1>
+   <div  class="Netflix-originals" >
+    <img src="./images/karthekaya.jpg" alt="" class="small-images">
+    <img src="./images/liger.jpg" alt="" class="small-images">
+    <img src="./images/lucifer.jpg" alt="" class="small-images">
+    <img src="./images/monkeyking.jpg" alt="" class="small-images">
+    <img src="./images/shamsera.jpg" alt="" class="small-images">
+    <img src="./images/karthekaya.jpg" alt="" class="small-images">
+    <img src="./images/liger.jpg" alt="" class="small-images">
+    <img src="./images/lucifer.jpg" alt="" class="small-images">
+    <img src="./images/monkeyking.jpg" alt="" class="small-images">
+    <img src="./images/shamsera.jpg" alt="" class="small-images">
 
-    </div>
-    <h1>Latest movies</h1>
-    <div class="trending">
-        
-        <img class="trending-movies" src="./images/brahmastra.jpg" alt="">
-        <img class="trending-movies" src="./images/karthekaya.jpg" alt="">
-        <img class="trending-movies"src="./images/lucifer.jpg" alt="">
-        <img class="trending-movies"src="./images/monkeyking.jpg" alt="">
-        <img class="trending-movies" src="./images/shamsera.jpg" alt="">
-        <img class="trending-movies"src="./images/liger.jpg" alt="">
-        <img class="trending-movies"src="./images/monkeyking.jpg" alt="">
+   </div>
+   <h1>New playlist</h1>
+   <div class="Netflix-originals">
+    <img src="./images/karthekaya.jpg" alt="" class="small-images">
+    <img src="./images/liger.jpg" alt="" class="small-images">
+    <img src="./images/lucifer.jpg" alt="" class="small-images">
+    <img src="./images/monkeyking.jpg" alt="" class="small-images">
+    <img src="./images/shamsera.jpg" alt="" class="small-images">
+    <img src="./images/karthekaya.jpg" alt="" class="small-images">
+    <img src="./images/liger.jpg" alt="" class="small-images">
+    <img src="./images/lucifer.jpg" alt="" class="small-images">
+    <img src="./images/monkeyking.jpg" alt="" class="small-images">
+    <img src="./images/shamsera.jpg" alt="" class="small-images">
 
-    </div>
+   </div>
+   <h1>Latest Movies</h1>
+   <div class="Netflix-originals">
+    <img src="./images/karthekaya.jpg" alt="" class="small-images">
+    <img src="./images/liger.jpg" alt="" class="small-images">
+    <img src="./images/lucifer.jpg" alt="" class="small-images">
+    <img src="./images/monkeyking.jpg" alt="" class="small-images">
+    <img src="./images/shamsera.jpg" alt="" class="small-images">
+    <img src="./images/karthekaya.jpg" alt="" class="small-images">
+    <img src="./images/liger.jpg" alt="" class="small-images">
+    <img src="./images/lucifer.jpg" alt="" class="small-images">
+    <img src="./images/monkeyking.jpg" alt="" class="small-images">
+    <img src="./images/shamsera.jpg" alt="" class="small-images">
+
+   </div>
+   
 </body>
 </html>

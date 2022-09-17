@@ -1,0 +1,64 @@
+body{
+    box-sizing: border-box;
+    width: 100%;
+}
+.flex-container{
+    display: flex;
+    
+   
+    flex-direction: column;
+ 
+} 
+
+.Netflix-logo{
+    width: 55px ;
+    height: 20px;
+}
+    
+    
+.nav-icons{
+    /* position: relative; */
+    background-image: url("./images/f7.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    object-fit: contain;
+    height: 500px;
+    padding: 5px;
+   
+}
+.icon-link{
+    text-decoration: none;
+    font-size: 17px;
+    padding: 7px;
+    color: aqua;
+}
+
+.movie-name-description{
+    margin-top: 230px;
+    margin-left: 20px;
+}
+.buttons button{
+    padding: 5px;
+    border-radius: 5px;
+
+}
+.Netflix-originals{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  
+    
+
+}
+.small-images{
+    margin-left: 10px;
+    transition: transform 450ms;
+     
+}
+.small-images:hover {
+    transform: scale(1.03);
+}
+
+
+ 
